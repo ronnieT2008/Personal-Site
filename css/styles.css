@@ -64,7 +64,7 @@ body{
 .navbar .navbar-brand{
     color: #000;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 28px;
 }
 .nav-link, .navbar.scroll, .navbar .right-side .bi{
     color: #000;
@@ -84,7 +84,7 @@ body{
 .navbar.scroll .navbar-brand{
     color: #fff;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 28px;
 }
 .navbar.scroll .left-side .nav-link{
     border: 1px solid #fff;
