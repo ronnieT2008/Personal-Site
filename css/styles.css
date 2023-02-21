@@ -25,6 +25,11 @@
     animation-name: rotate;
     animation-timing-function: linear;
 }
+.navbar .right-side li:hover{
+    animation-name: rotate;
+    animation-duration: .25s;
+    animation-timing-function: linear;
+}
 
 /* ----- Styles ----- */
 
@@ -34,20 +39,19 @@ body{
 
 /* navbar */
 .navbar{
+    padding: 10px 0;
     background: transparent;
-    height: 80px;
     font-size: 18px;
     padding: 0;
+    padding: 10px 0;
 }
-.navbar .navbar-brand{
-    font-weight: 600;
-    font-size: 24px;
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 5px 25px;
 }
 .navbar ul{
     list-style: none;
 }
 .nav-link{
-    color: #000;
     font-weight: 500;
 }
 .navbar .right-side ul{
@@ -56,13 +60,50 @@ body{
 .navbar .right-side ul li{
     margin: 0 20px;
 }
-.navbar .right-side .bi{
+
+.navbar .navbar-brand{
+    color: #000;
+    font-weight: 600;
+    font-size: 24px;
+}
+.nav-link, .navbar.scroll, .navbar .right-side .bi{
     color: #000;
 }
-.navbar .right-side li:hover{
-    animation-name: rotate;
-    animation-duration: .25s;
-    animation-timing-function: linear;
+.navbar .left-side .nav-link{
+    border: 1px solid #000;
+}
+.navbar .left-side .nav-link.active{
+    color: #146c43;
+    border: 1px solid #146c43;
+}
+.navbar .left-side .nav-link:hover{
+    color: #146c43;
+    border: 2px solid #146c43;
+}
+/* navbar on scroll  */
+.navbar.scroll .navbar-brand{
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+}
+.navbar.scroll .left-side .nav-link{
+    border: 1px solid #fff;
+}
+.navbar.scroll .left-side .nav-link.active{
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}
+.navbar.scroll {
+    background: #343a40;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.navbar.scroll .left-side .nav-link:hover{
+    border: 2px solid #ffc107;
+    color: #ffc107;
+}
+.scroll .nav-link, .navbar.scroll  .right-side .bi{
+    color: #fff;
 }
 
 /* Home Page  */
