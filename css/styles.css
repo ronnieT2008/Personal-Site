@@ -64,7 +64,7 @@ body{
 .navbar .navbar-brand{
     color: #000;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 26px;
 }
 .nav-link, .navbar.scroll, .navbar .right-side .bi{
     color: #000;
@@ -106,9 +106,31 @@ body{
     color: #fff;
 }
 
+/* Styles Classes */
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Home Page  */
 .banner{
     background-image: url("https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&cs=tinysrgb&w=1600");
     height: 100vh;
     background-size: cover;
+    text-align: center;
+}
+.banner .banner-img img{
+    width: 280px;
+    height: 280px;
+}   
+.banner .banner-content{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner .banner-text{
+    margin-top: 20px;
 }
